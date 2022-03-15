@@ -28,3 +28,23 @@ body {
 .bg-azzurro {
   background-color: skyblue;
 }
+
+/*classi create per fare il bonus */
+/*potevo anche riutilizzare la classe .cell tanto per quanto riguarda il livello 1 l'output html è lo stesso*/
+.cell-1 {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px dashed black;
+}
+
+.cell-2 {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  border: 2px dashed black;
+}
+
+.cell-3 {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  border: 2px dashed black;
+}
