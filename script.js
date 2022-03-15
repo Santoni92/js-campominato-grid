@@ -18,7 +18,7 @@ for(let i = 0; i < totalCells;i++)
                                                     un range i cui estremi gli vengono passati come argomento, il testo contenuto
                                                     all'interno del div che rappresenta la singola cella della griglia*/
 
-    grid.appendChild(cell); //appendo il div appena creato che rappresenta la singola cella della griglia nel div che rappresenta la griglia stessa
+    griglia.appendChild(cell); //appendo il div appena creato che rappresenta la singola cella della griglia nel div che rappresenta la griglia stessa
 
 }
 
@@ -46,7 +46,7 @@ function createCell()
 /*funzione che restituisce come output un numero random compreso in un range i cui estremi sono passati come argomento dall'utente */
 function generateRandomNumber(min,max)
 {
-    const range = max - min +1;
+    const range = max - min + 1;
     const numeroRandom = Math.floor(Math.random()*range + min);
     return numeroRandom;
 }
