@@ -39,7 +39,7 @@ function createCell()
 {
     const item = document.createElement('div'); /*col metodo createElement() dell'oggetto document vado a creare un 
                                                  elemento (oggetto) html di tipo div;creo un elemento html in particolare un div*/
-    item.classList.add('.cell');    //aggiungo all'elemento div creato una classe css di nome '.cell'
+    item.classList.add('cell');    //aggiungo all'elemento div creato una classe css di nome '.cell'
     return item;    //restituisco al chiamante al termine della funzione l'elemento html (provvisto di classe css) creato
 }
 
