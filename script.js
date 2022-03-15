@@ -14,9 +14,11 @@ for(let i = 0; i < totalCells;i++)
     const cell = createCell();  /*creo, grazie alla chiamata della funzione,un elemento (oggetto) html, in 
                                   particolare trattasi di un div avente classe css '.cell' */
 
-    cell.innerText = generateRandomNumber(1,100);   /*setto, tramite la funzione che ritorna un numero random compreso in
+    /*cell.innerText = generateRandomNumber(1,100);   /*setto, tramite la funzione che ritorna un numero random compreso in
                                                     un range i cui estremi gli vengono passati come argomento, il testo contenuto
                                                     all'interno del div che rappresenta la singola cella della griglia*/
+                                                    
+    cell.innerText = ( i + 1);  //I numeri della griglia vanno inseriti in ordine, da 1 a 100. Non in ordine casuale.
 
     griglia.appendChild(cell); //appendo il div appena creato che rappresenta la singola cella della griglia nel div che rappresenta la griglia stessa
 
