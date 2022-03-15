@@ -12,13 +12,19 @@ body {
   width: 500px;
   height: 500px;
   margin: 50px auto;
-  background-color: aquamarine;
+  background-color: bisque;
   display: flex;
   flex-wrap: wrap;
 }
 
+/*classe da associare a ciascun singolo div creato col js*/
 .cell {
   width: calc(100% / 8);
   height: calc(100% / 8);
   border: 2px dashed black;
+}
+
+/*classe che aggiungo alla singola cella solo nel momento in cui l'utente clicca su quella determinata cella*/
+.bg-azzurro {
+  background-color: skyblue;
 }

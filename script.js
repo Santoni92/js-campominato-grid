@@ -17,8 +17,22 @@ for(let i = 0; i < totalCells;i++)
     /*cell.innerText = generateRandomNumber(1,100);   /*setto, tramite la funzione che ritorna un numero random compreso in
                                                     un range i cui estremi gli vengono passati come argomento, il testo contenuto
                                                     all'interno del div che rappresenta la singola cella della griglia*/
-                                                    
+
     cell.innerText = ( i + 1);  //I numeri della griglia vanno inseriti in ordine, da 1 a 100. Non in ordine casuale.
+
+    //Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
+    //faccio uso dell'ascoltatore dell'evento 'click'
+    cell.addEventListener('click',function(){
+        cell.classList.toggle('bg-azzurro');    /*Il metodo toggle() funziona in codesto modo: se la classe è associata al div che rappresenta la singola cella 
+                                                  su cui l'utente clicca allora essa viene tolta altrimenti gli viene impostata;
+                                                  e quindi se quella determinata cella su cui l'utente clicca ha già 
+                                                  settata (assegnata,impostata) la classe che gli da lo sfondo azzurro allora
+                                                  cliccandoci la classe viene rimossa e la cella perde lo sfondo azzurro altrimenti 
+                                                  se la cella non presenta la classe che gli da lo sfondo allora al click dell'utente
+                                                  la classe gli viene assegnata e quella cella assumerà sfondo azzurro.
+                                                  Funziona come uno switch */
+    });
+
 
     griglia.appendChild(cell); //appendo il div appena creato che rappresenta la singola cella della griglia nel div che rappresenta la griglia stessa
 
