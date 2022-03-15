@@ -3,8 +3,8 @@ console.log('JS OK!');  //controllo che lo script js sia collegato all'html
 //vado a selezionare (prendere) l'elemento (il div che rappresenta la griglia) nell'html
 const griglia = document.getElementById('griglia');
 
-const columns = 8;  //n° delle colonne della griglia
-const rows = 8; //n° delle righe della griglia
+const columns = 10;  //n° delle colonne della griglia
+const rows = 10; //n° delle righe della griglia
 const totalCells = columns * rows;  //n° totale di celle (di elementi) presenti nella griglia
 
 //con un ciclo for mi creo un numero totale di celle pari ad totalCells
