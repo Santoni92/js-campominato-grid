@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#griglia {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  background-color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: calc(100% / 8);
+  height: calc(100% / 8);
+  border: 2px dashed black;
+}
