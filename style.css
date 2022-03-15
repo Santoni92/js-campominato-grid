@@ -10,7 +10,7 @@ body {
 
 #griglia {
   width: 500px;
-  min-height: 500px;
+  height: 500px;
   margin: 50px auto;
   background-color: bisque;
   display: flex;
@@ -19,8 +19,8 @@ body {
 
 /*classe da associare a ciascun singolo div creato col js*/
 .cell {
-  width: calc(100% / 8);
-  height: calc(100% / 8);
+  width: calc(100% / 10);
+  height: calc(100% / 10);
   border: 2px dashed black;
 }
 
